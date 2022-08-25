@@ -1,20 +1,26 @@
 :root {
     /* fonts */
-    --main-font: 'Open Sans', sans-serif;
-    --secondary-font: 'Raleway', sans-serif;
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Kalam ', sans-serif;
   
+    /*button*/
+    --button-green:#BBF330;
+    --button-hover: #7EB101;;
+    --button-subscribe: #FFE550;;
     /* text colors */
-    --main-txt-cl: #303030;
-    --accent-txt-cl: #ff6c00;
-    --btn-txt-cl: #ffffff;
+    --header-section-color:#2C2C2C;
   
     /* bg colors */
-    --light-bg-cl: #f7f7f7;
-    --dark-bg-cl: #191c26;
+    --light-bg-cl: #FEFEFE;
+   
+  
   
     /* others */
-    --indent: 30px;
+    /* Shadow Fruit */
+  
+  --shadowfruit-bagcol: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+    
+  --indent: 30px;
     --items: 3;
     --anim-fast: 300ms ease-in-out;
-    --anim-slow: 600ms ease-out;
-  }
+    --anim-slow: 600ms ease-out;}
