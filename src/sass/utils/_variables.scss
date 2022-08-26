@@ -1,26 +1,21 @@
-:root {
-    /* fonts */
-    --main-font: 'Roboto', sans-serif;
-    --secondary-font: 'Kalam ', sans-serif;
-  
-    /*button*/
-    --button-green:#BBF330;
-    --button-hover: #7EB101;;
-    --button-subscribe: #FFE550;;
-    /* text colors */
-    --main-txt-color:#2C2C2C;
-  
-    /* bg colors */
-    --light-bg-cl: #FEFEFE;
-   
-  
-  
-    /* others */
-    /* Shadow Fruit */
-  
-  --shadowfruit-bagcol: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
-    
-  --indent: 30px;
-    --items: 3;
-    --anim-fast: 300ms ease-in-out;
-    --anim-slow: 600ms ease-out;}
+/* fonts */
+$main-font: 'Roboto', sans-serif;
+
+/*colors*/
+$green: #bbf330;
+$dark-green: #7eb101;
+$yellow: #ffe550;
+$black: #2c2c2c;
+$white: #fefefe;
+
+/* others */
+/* Shadow Fruit */
+
+$shadowfruit-bagcol: radial-gradient(50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%);
+
+$indent: 30px;
+$items: 3;
+$anim-fast: 300ms ease-in-out;
+$anim-slow: 600ms ease-out;
