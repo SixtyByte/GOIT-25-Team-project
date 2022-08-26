@@ -12,7 +12,7 @@
     padding: 15px;
     width: 360px;
 
-    background-image: url('/src/images/hero/EllipseBig.jpg');
+    background-image: url('/src/images/hero/EllipseBig.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -20,7 +20,7 @@
 
   @media screen and (min-width: $desktop) {
     top: 0;
-    background-image: url('/src/images/hero/EllipseSmall.jpg');
+    background-image: url('/src/images/hero/EllipseSmall.png');
     padding: 25px;
     width: 590px;
   }
