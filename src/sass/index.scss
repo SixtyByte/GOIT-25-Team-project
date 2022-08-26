@@ -1,24 +1,16 @@
-@import './common';
-/**
-  |============================
-  | Base
-  |============================
-*/
+@import './common/common';
+
+@import "./utils/variables";
+@import "./utils/breakpoints";
+
+@import "./utils/mixines";
+@import "./utils/placeholders";
+
 @import "./base/base";
 @import "./base/reset";
-/**
-  |============================
-  |Ultilites 
-  |============================
-*/
-@import "./ultilits/variables";
-@import "./ultilits/breakpoints";
 
-/**
-  |============================
-  | Layout
-  |============================
-*/
+@import "./common/swiper";
+
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/offerings";
@@ -26,6 +18,3 @@
 @import "./layout/customers";
 @import "./layout/subscribe";
 @import "./layout/footer";
-
-
-

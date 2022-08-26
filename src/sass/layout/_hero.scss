@@ -1,0 +1,72 @@
+.hero-container {
+  position: relative;
+
+  padding: {
+    top: 60px;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+  }
+
+  margin-bottom: 50px;
+
+  @media screen and (min-width: $tablet) {
+    padding: {
+      left: 32px;
+      right: 32px;
+    }
+
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: {
+      top: 160px;
+      left: 16px;
+      right: 0;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media screen and (min-width: $tablet) {}
+
+  @media screen and (min-width: $desktop) {}
+
+  &__title {
+    font: {
+      size: 28px;
+      weight: 700;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 42px;
+      width: 540px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 48px;
+      width: 500px;
+    }
+  }
+
+  &__article {
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      width: 340px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 500px;
+    }
+  }
+
+  &__button {
+    @extend %button;
+    height: 30px;
+  }
+}
