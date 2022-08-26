@@ -60,12 +60,13 @@
   background-image: url(../images/offering/img_280_309.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   @media screen and (min-width: $tablet) {
     width: 704px;
     height: 394px;
     background-image: url('../images/offering/img_704_394.png');
+    background-size: contain;
   }
 
   @media screen and (min-width: $desktop) {
