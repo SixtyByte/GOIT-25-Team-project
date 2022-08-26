@@ -12,7 +12,7 @@
     padding: 15px;
     width: 360px;
 
-    background-image: url('/src/images/Hero/EllipseBig.jpg');
+    background-image: url('/src/images/hero/EllipseBig.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -20,7 +20,7 @@
 
   @media screen and (min-width: $desktop) {
     top: 0;
-    background-image: url('/src/images/Hero/EllipseSmall.jpg');
+    background-image: url('/src/images/hero/EllipseSmall.jpg');
     padding: 25px;
     width: 590px;
   }
@@ -43,6 +43,7 @@
 
 .swiper-image {
   width: 295px;
+
   @media screen and (min-width: $desktop) {
     width: 535px;
   }
@@ -66,7 +67,7 @@
 
     &::after {
       content: '';
-      background-image: url('/src/images/SVG/prev.svg');
+      background-image: url('/src/images/hero/prev.svg');
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -79,6 +80,7 @@
       }
     }
   }
+
   & .swiper-button-next-custom {
     background-color: white;
     width: 34px;
@@ -96,7 +98,7 @@
 
     &::after {
       content: '';
-      background-image: url('/src/images/SVG/next.svg');
+      background-image: url('/src/images/hero/next.svg');
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
