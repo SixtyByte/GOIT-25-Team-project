@@ -1,24 +1,10 @@
 @import './common';
-/**
-  |============================
-  | Base
-  |============================
-*/
-@import "./base/base";
-@import "./base/reset";
-/**
-  |============================
-  |Ultilites 
-  |============================
-*/
 @import "./utils/variables";
 @import "./utils/breakpoints";
 
-/**
-  |============================
-  | Layout
-  |============================
-*/
+@import "./base/base";
+@import "./base/reset";
+
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/offerings";
