@@ -1,3 +1,28 @@
 @import './common';
-@import './example';
+/**
+  |============================
+  | Base
+  |============================
+*/
+@import "./base/base";
+@import "./base/reset";
+/**
+  |============================
+  |Ultilites 
+  |============================
+*/
+@import "./utils/variables";
+@import "./utils/breakpoints";
 
+/**
+  |============================
+  | Layout
+  |============================
+*/
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/offerings";
+@import "./layout/favorites";
+@import "./layout/customers";
+@import "./layout/subscribe";
+@import "./layout/footer";
