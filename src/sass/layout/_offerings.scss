@@ -8,7 +8,7 @@
   font-size: 14px;
 }
 
-.offering-container {
+.offerings-container {
   @extend .container;
 
   padding-bottom: 60px;
@@ -106,7 +106,7 @@
   }
 }
 
-.offering {
+.offerings {
   @media screen and (min-width: $desktop) {
     padding: {
       top: 260px;
@@ -115,7 +115,7 @@
   }
 }
 
-.offering__title {
+.offerings__title {
   @extend %title;
 
   font-size: 28px;
@@ -137,7 +137,7 @@
   }
 }
 
-.offering__description {
+.offerings__description {
 
   padding-right: 8px;
 
@@ -162,22 +162,7 @@
   }
 }
 
-.offering__subtitle {
-  @extend %title;
-
-  font-size: 18px;
-  line-height: calc(21 / 18);
-
-  margin-bottom: 16px;
-}
-
-.offering__subdescription {
-  @extend %main-font;
-  line-height: calc(16 / 14);
-}
-
-
-.offering__list {
+.offerings__list {
   @extend %list;
 
   margin-bottom: 28px;
@@ -196,7 +181,7 @@
   }
 }
 
-.offering__item {
+.offering {
   padding-right: 28px;
   
   @media screen and (max-width: calc($tablet - 1px)) {
@@ -210,8 +195,8 @@
     @include flex-basis(2, 200px);
   }
 
-  @media screen and (min-width: $tablet) {
-    @include flex-basis(2, 149px);
+  @media screen and (min-width: $desktop) {
+    @include flex-basis(2, 141px);
   }
 
   &::before {
@@ -235,13 +220,31 @@
   }
 }
 
-.offering__button-thumb {
+.offering__title {
+  @extend %title;
+
+  font-size: 18px;
+  line-height: calc(21 / 18);
+
+  margin-bottom: 16px;
+}
+
+.offering__description {
+  @extend %main-font;
+  line-height: calc(16 / 14);
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.5;
+  }
+}
+
+.offerings__button-thumb {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-.offering__button {
+.offerings__button {
   @extend %button;
   
   // margin-right: 20px;
@@ -264,10 +267,14 @@
   }
 }
 
-.offering__accent {
+.offerings__accent {
   @extend %link;
   @extend %main-font;
   line-height: 1.5;
 
   color: #000000;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
