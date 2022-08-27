@@ -1,0 +1,78 @@
+.subscribe {
+  display: block;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.subscribe__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  color: $black;
+  margin-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    font-size: 42px;
+  }
+}
+.subscribe__text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  color: $black;
+  padding-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 24px;
+  }
+}
+/*.subscribe__form {
+  @media screen and (max-width: 767px) {
+    justify-content: flex-end;
+  }
+}*/
+.subscribe__input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 0.854167px solid #ffe550;
+  border-radius: 30px;
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+    margin-right: 22px;
+    width: 395px;
+  }
+  @media screen and(min-width: $desktop) {
+    margin-right: 32px;
+  }
+}
+.subscribe__button {
+  padding: 11px 22px;
+  position: absolute;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: $black;
+  background: $green;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  &:hover {
+    background: #b5ff00;
+  }
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+//Поиксить баг с конпкой
+//пофиксить баг с бананом
+//Добавить состояния для инпута
