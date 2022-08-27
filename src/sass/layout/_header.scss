@@ -1,115 +1,151 @@
-.container{
-    padding-right: 20px;
-    padding-left: 20px;
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.header{
-    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+.header {
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
 
-.menu__item{
-    @extend %list;
-        padding-top: 16px;
-            padding-bottom: 16px;
-            padding-left: 16px;
-
-            &:hover {
-                    background-color: #BBF330;
-                }
+.header__inner {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.menu__link{
-    @extend %link;
-    font-weight: 400;
-        font-size: 16px;
-        line-height: calc(19 / 16);
-        color: #000;
-
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 16px;
-
+.menu {
+  @extend %list;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 28px;
+  }
 }
 
-.header__mobile{
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.menu__link {
+  @extend %link;
+  display: block;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: #000;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  transition: background-color $anim-fast;
+
+  &:hover,
+  &:focus {
+    background-color: $green;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: color $anim-fast;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: $green;
+      text-decoration: underline;
+    }
+  }
 }
 
-.header__menu{
-    position: relative;
+.header__mobile {
+  position: relative;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__menu {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: 28px;
 }
 
 .nav {
-    z-index: 100;
-    overflow-y: scroll;
+  z-index: 100;
+  overflow-y: scroll;
 
-    @media screen and (max-width: 767px) {
-        display: none;
-        position: absolute;
-        top: -25px;
-        right: 0;
-        width: 130px;
-        height: 255px;
-        background-color: #FEFEFE;
+  @media screen and (max-width: $tablet) {
+    display: none;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 130px;
+    height: 255px;
+    background-color: $white;
 
-        box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-            border-radius: 30px 0px 30px 30px;
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    border-radius: 30px 0px 30px 30px;
 
-        &.is-open {
-            display: block;
-        }
+    &.is-open {
+      display: block;
     }
+  }
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        overflow-y: auto
-    }
+  @media screen and (min-width: $tablet) {
+    overflow-y: auto;
+  }
+}
+
+.header__btn-svg {
+    fill: $dark-green;
 }
 
 .header__btn {
-    display: inline-flex;
-    background-color: transparent;
-    border: none;
-    margin: 0;
-    padding: 0;
-    z-index: 500;
+  display: inline-flex;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  z-index: 500;
 
-    position: absolute;
-    top: 22px;
-    right: 0;
+  position: absolute;
+  top: 22px;
+  right: 0;
 
-    & .icon-close {
-        display: none;
-        transition: fill 300ms ease-in-out;
-    }
-
-    & .icon-open {
-        transition: fill 300ms ease-in-out;
-    }
-
-    &.is-open .icon-close {
-        display: block;
-    }
-
-    &.is-open .icon-open {
-        display: none;
-    }
-
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-}
-
-
-.nav__btn{
+  & .icon-close {
     display: none;
-    @media screen and (min-width:768px) {
-        display: block;
-    }
+    transition: fill $anim-fast;
+  }
+
+  & .icon-open {
+    transition: fill $anim-fast;
+  }
+
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  &.is-open .icon-open {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
+.nav__btn {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
+    background-color: $green;
+    border-radius: 30px;
+    padding: 5px 16px;
 
+    border: 0;
 
-
+    font-weight: 400;
+    font-size: 14px;
+    color: $black;
+  }
+}

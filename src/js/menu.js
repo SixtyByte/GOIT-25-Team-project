@@ -14,10 +14,10 @@
     const expanded =
       menuBtnRef.getAttribute("aria-expanded") === "true" || false;
 
-    menuBtnRef.classList.toggle("menu-button--is-open");
+    menuBtnRef.classList.toggle("is-open");
     menuBtnRef.setAttribute("aria-expanded", !expanded);
 
-    mobileMenuRef.classList.toggle("menu-container--is-open");
+    mobileMenuRef.classList.toggle("is-open");
 
     document.body.classList.toggle('no-scroll');
   };
