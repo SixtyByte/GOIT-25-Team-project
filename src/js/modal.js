@@ -8,7 +8,7 @@
     if (!!refs.openModalBtn) {
       refs.openModalBtn.addEventListener("click", toggleModal);
     }
-    if (!!refs.openModalBtn) {
+    if (!!refs.closeModalBtn) {
       refs.closeModalBtn.addEventListener("click", toggleModal);
     }
   
