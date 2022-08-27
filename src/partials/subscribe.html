@@ -1,12 +1,4 @@
 <section class="container subscribe">
-  <div class="section__thumb">
-    <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
-    <p class="subscribe__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique.
-    </p>
-    <form action=""></form>
-  </div>
   <picture>
     <source
       media="(max-width:767px)"
@@ -14,15 +6,32 @@
       type="image/png"
     />
     <source
-      media="(max-width:1199px)"
+      media="(max-width:1279px)"
       srcset="/src/images/subscribe/banan-tab@1x.png 1x"
       type="image/png"
     />
     <source
-      media="(min-width:1200px)"
+      media="(min-width:1280px)"
       srcset="/src/images/subscribe/banan-desk@1x.png 1x"
       type="image/png"
     />
     <img src="/src/images/subscribe/banan-mob@1x.png" alt="Банан" width="546" />
   </picture>
+  <div class="section__thumb">
+    <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+    <p class="subscribe__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique.
+    </p>
+    <form class="subscribe__form">
+      <input
+        class="subscribe__input"
+        type="e-mail"
+        placeholder="Enter your email"
+        required
+        pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+      />
+      <button type="submit" class="subscribe__button">Subscribe</button>
+    </form>
+  </div>
 </section>
