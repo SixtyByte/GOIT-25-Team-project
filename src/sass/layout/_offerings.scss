@@ -3,11 +3,6 @@
   margin-bottom: 0;
 }
 
-%main-font {
-  font-weight: 400;
-  font-size: 14px;
-}
-
 .offerings-container {
   @extend .container;
 
@@ -141,7 +136,6 @@
 
   padding-right: 8px;
 
-  @extend %main-font;
   line-height: calc(16 / 14);
 
   margin-bottom: 28px;
@@ -230,7 +224,7 @@
 }
 
 .offering__description {
-  @extend %main-font;
+  
   line-height: calc(16 / 14);
 
   @media screen and (min-width: $desktop) {
@@ -269,7 +263,6 @@
 
 .offerings__accent {
   @extend %link;
-  @extend %main-font;
   line-height: 1.5;
 
   color: #000000;
