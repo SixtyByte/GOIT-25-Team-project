@@ -20,6 +20,20 @@
     mobileMenuRef.classList.toggle("is-open");
 
     document.body.classList.toggle('no-scroll');
+    
+    if (!expanded) {
+      setTimeout(() => {
+        document.addEventListener('click', onDocumentClick);
+      }, 100);  
+    }
+    else {
+      document.removeEventListener('click', onDocumentClick);
+    }
   };
 
+  function onDocumentClick (event) {
+    if ((event.target !== menuBtnRef) && (event.target !== mobileMenuRef)) {
+      hendleMobileMenu();
+    }
+  };
 })();
