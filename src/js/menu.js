@@ -4,13 +4,13 @@
   const menuItem = document.querySelector('[data-menu-list]');
   
   if (!!menuBtnRef) {
-    menuBtnRef.addEventListener("click", hendleMobileMenu);
+    menuBtnRef.addEventListener("click", handleMobileMenu);
   }
   if (!!menuItem) {
-    menuItem.addEventListener('click', hendleMobileMenu);
+    menuItem.addEventListener('click', handleMobileMenu);
   }
 
-  function hendleMobileMenu () {
+  function handleMobileMenu () {
     const expanded =
       menuBtnRef.getAttribute("aria-expanded") === "true" || false;
 
@@ -33,7 +33,7 @@
 
   function onDocumentClick (event) {
     if ((event.target !== menuBtnRef) && (event.target !== mobileMenuRef)) {
-      hendleMobileMenu();
+      handleMobileMenu();
     }
   };
 })();
