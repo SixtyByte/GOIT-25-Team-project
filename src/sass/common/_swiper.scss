@@ -3,38 +3,38 @@
 
   @media screen and (min-width: $tablet) {
     position: absolute;
-    top: 130px;
-    right: 20px;
+    top: 150px;
+    right: 40px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
-    width: 360px;
+    width: 320px;
+    height: 320px;
 
-    background-image: url('/src/images/hero/EllipseBig.png');
+    background-image: url('/src/images/hero/EllipseSmall.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
   }
 
   @media screen and (min-width: $desktop) {
-    top: 0;
-    right: 10px;
-    background-image: url('/src/images/hero/EllipseSmall.png');
-    padding: 25px;
-    width: 590px;
+    top: 15px;
+    right: 30px;
+    background-image: url('/src/images/hero/EllipseBig.png');
+    width: 580px;
+    height: 580px;
   }
 }
 
 .swiper {
-  width: 295px;
-  height: 295px;
+  width: 290px;
+  height: 290px;
   border-radius: 50%;
 
   @media screen and (min-width: $desktop) {
-    width: 535px;
-    height: 535px;
+    width: 530px;
+    height: 530px;
   }
 
   & .swiper-pagination-bullet-active {
@@ -43,10 +43,10 @@
 }
 
 .swiper-image {
-  width: 295px;
+  width: 290px;
 
   @media screen and (min-width: $desktop) {
-    width: 535px;
+    width: 530px;
   }
 }
 
