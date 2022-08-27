@@ -7,8 +7,8 @@ img {
   margin: 0 auto;
 
   padding: {
-    left: 15px;
-    right: 15px;
+    left: 20px;
+    right: 20px;
   }
 
   @media screen and (min-width: $mobile) {
@@ -17,10 +17,20 @@ img {
 
   @media screen and (min-width: $tablet) {
     width: 768px;
+
+    padding: {
+      left: 32px;
+      right: 32px;
+    }
   }
 
   @media screen and (min-width: $desktop) {
     width: 1280px;
+
+    padding: {
+      left: 16px;
+      right: 16px;
+    }
   }
 }
 
