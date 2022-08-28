@@ -1,16 +1,16 @@
 .favorites__section {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #f5f5f5;
-  max-width: 480px;
+  background-color: #f5f5f5;
+  max-width: $mobile;
   margin: auto;
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
+  @media screen and (min-width: $tablet) {
+    max-width:$tablet;
     padding-top: 100px;
     padding-bottom: 140px;
   }
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -22,7 +22,7 @@
   line-height: calc(33 / 28);
   text-align: center;
   margin-bottom: 20px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-weight: 700;
     font-size: 42px;
     line-height: calc(49 / 42);
@@ -36,19 +36,20 @@
   line-height: calc(16 / 14);
   text-align: center;
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 40px;
   }
 }
 
 .favorites__list {
   margin-bottom: 0;
-  @media screen and (min-width: 0) and (max-width: 767px) {
+  @extend %list;
+  @media screen and (min-width: 0) and (max-width: calc($tablet - 1px)) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,7 +57,7 @@
     margin-top: 0;
     padding: 0;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -65,15 +66,11 @@
     padding: 0;
   }
   /**Destop*/
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .favorites__item {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+  
 }
 
 .favorite__image {
@@ -81,10 +78,6 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  border-bottom-left-radius: 50% 50%;
   -webkit-user-drag: none; 
   -khtml-user-drag: none; 
   -moz-user-drag: none; 
@@ -92,13 +85,13 @@
 }
 
 .favorite__item--mobile {
-  @media screen and (min-width: 0) and (max-width: 767px) {
+  @media screen and (min-width: 0) and (max-width: calc($tablet - 1px)) {
     display: none;
   }
 }
 
-.border {
-  background: #fefefe;
+.favorite__border {
+  background-color: #fefefe;
 
   border: 14px solid #ffe550;
   border-radius: 167.5px;
@@ -108,15 +101,20 @@
   justify-content: center;
   align-items: center;
   transition: color, ease-in-out 400ms;
+  
+  &:hover, 
+  &:focus{ border-color:$green ;
+    cursor: pointer;}
+  
 
-  @media screen and (min-width: 0) and (max-width: 767px) {
+  @media screen and (min-width: 0) and (max-width: calc($tablet - 1px)) {
     border: 11px solid #ffe550;
     border-radius: 139.658px;
     width: 282px;
     height: 282px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     border: 16px solid #ffe550;
     width: 395px;
     height: 397px;
@@ -124,15 +122,11 @@
   }
 }
 .border--mobile {
-  @media screen and (min-width: 0) and (max-width: 767px) {
+  @media screen and  (max-width: calc($tablet - 1px)) {
     display: none;
   }
 }
-.border:hover {
-  border-color: #bbf330;
-  cursor: pointer;
-}
-.border:focus {
-  border-color: #bbf330;
-  cursor: pointer;
-}
+
+
+
+
