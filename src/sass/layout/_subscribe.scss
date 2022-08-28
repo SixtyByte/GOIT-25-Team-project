@@ -37,19 +37,32 @@
     justify-content: flex-end;
   }
 }*/
+.subscribe__form-thumb {
+  @media screen and (min-width: $tablet) {
+    margin-right: 22px;
+    display: inline;
+  }
+  @media screen and(min-width: $desktop) {
+    margin-right: 32px;
+  }
+}
+.subscribe__input {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+.subscribe__input:invalid:not(:placeholder-shown) {
+  margin-bottom: 1px;
+}
+
 .subscribe__input {
   padding: 12px;
-  margin-bottom: 20px;
+
   border: 0.854167px solid #ffe550;
   border-radius: 30px;
   width: 100%;
   @media screen and (min-width: $tablet) {
-    margin-bottom: 0;
-    margin-right: 22px;
     width: 395px;
-  }
-  @media screen and(min-width: $desktop) {
-    margin-right: 32px;
   }
   &:invalid {
     border-color: #ff705d;
@@ -81,8 +94,8 @@
 }
 .subscribe__button {
   padding: 11px 22px;
-  position: absolute;
-
+  position: relative;
+  margin-left: auto;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -93,12 +106,13 @@
   border-radius: 30px;
   border: 0;
   cursor: pointer;
+  display: block;
   &:hover {
     background: #b5ff00;
   }
-  @media screen and (max-width: 767px) {
-    display: block;
+  @media screen and (min-width: $tablet) {
+    display: inline;
+    margin: 0;
   }
 }
-//Поиксить баг с конпкой
 //пофиксить баг с бананом
