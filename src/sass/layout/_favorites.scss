@@ -5,7 +5,7 @@
   max-width: $mobile;
   margin: auto;
   @media screen and (min-width: $tablet) {
-    max-width:$tablet;
+    max-width: $tablet;
     padding-top: 100px;
     padding-bottom: 140px;
   }
@@ -69,8 +69,6 @@
   @media screen and (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
-  
 }
 
 .favorite__image {
@@ -78,10 +76,10 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  -webkit-user-drag: none; 
-  -khtml-user-drag: none; 
-  -moz-user-drag: none; 
-  -o-user-drag: none; 
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
 }
 
 .favorite__item--mobile {
@@ -101,11 +99,12 @@
   justify-content: center;
   align-items: center;
   transition: color, ease-in-out 400ms;
-  
-  &:hover, 
-  &:focus{ border-color:$green ;
-    cursor: pointer;}
-  
+
+  &:hover,
+  &:focus {
+    border-color: $green;
+    cursor: pointer;
+  }
 
   @media screen and (min-width: 0) and (max-width: calc($tablet - 1px)) {
     border: 11px solid #ffe550;
@@ -122,11 +121,7 @@
   }
 }
 .border--mobile {
-  @media screen and  (max-width: calc($tablet - 1px)) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     display: none;
   }
 }
-
-
-
-
