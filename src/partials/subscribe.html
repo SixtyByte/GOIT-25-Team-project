@@ -1,12 +1,7 @@
 <section class="container subscribe">
   <picture>
     <source
-      media="(max-width:767px)"
-      srcset="/src/images/subscribe/banan-mob@1x.png 1x"
-      type="image/png"
-    />
-    <source
-      media="(max-width:1279px)"
+      media="(min-width:768px)"
       srcset="/src/images/subscribe/banan-tab@1x.png 1x"
       type="image/png"
     />
@@ -31,6 +26,16 @@
         required
         pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
       />
+
+      <span class="subscribe__error"
+        ><img
+          src="./images/subscribe/icon-error.svg"
+          alt=""
+          class="subscribe__error-icon"
+        />
+        Not a valid email address (example@email.com)</span
+      >
+
       <button type="submit" class="subscribe__button">Subscribe</button>
     </form>
   </div>

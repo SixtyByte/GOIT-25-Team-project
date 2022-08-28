@@ -51,6 +51,33 @@
   @media screen and(min-width: $desktop) {
     margin-right: 32px;
   }
+  &:invalid {
+    border-color: #ff705d;
+  }
+  &:valid {
+    border-color: $dark-green;
+  }
+
+  &:placeholder-shown {
+    border-color: #ffe550;
+  }
+}
+.subscribe__error {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+
+  color: #ff705d;
+  display: none;
+  margin-top: 4px;
+}
+.subscribe__input:invalid:not(:placeholder-shown) + .subscribe__error {
+  display: flex;
+}
+.subscribe__error-icon {
+  margin-right: 4px;
 }
 .subscribe__button {
   padding: 11px 22px;
@@ -75,4 +102,3 @@
 }
 //Поиксить баг с конпкой
 //пофиксить баг с бананом
-//Добавить состояния для инпута
