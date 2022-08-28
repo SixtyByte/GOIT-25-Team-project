@@ -85,6 +85,10 @@
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
   border-bottom-left-radius: 50% 50%;
+  -webkit-user-drag: none; 
+  -khtml-user-drag: none; 
+  -moz-user-drag: none; 
+  -o-user-drag: none; 
 }
 
 .favorite__item--mobile {
@@ -103,6 +107,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: color, ease-in-out 400ms;
 
   @media screen and (min-width: 0) and (max-width: 767px) {
     border: 11px solid #ffe550;
