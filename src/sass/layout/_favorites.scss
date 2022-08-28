@@ -1,16 +1,14 @@
 .favorites__section {
+  @extend .container;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f5f5f5;
-  max-width: $mobile;
-  margin: auto;
+  
   @media screen and (min-width: $tablet) {
-    max-width: $tablet;
     padding-top: 100px;
     padding-bottom: 140px;
   }
   @media screen and (min-width: $desktop) {
-    max-width: $desktop;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -82,11 +80,8 @@
   -o-user-drag: none;
 }
 
-.favorite__item--mobile {
-  @media screen and (min-width: 0) and (max-width: calc($tablet - 1px)) {
-    display: none;
-  }
-}
+
+
 
 .favorite__border {
   background-color: #fefefe;
@@ -105,6 +100,7 @@
     border-color: $green;
     cursor: pointer;
   }
+  
 
   @media screen and (min-width: 0) and (max-width: calc($tablet - 1px)) {
     border: 11px solid #ffe550;
@@ -120,8 +116,12 @@
     border-radius: 197.5px;
   }
 }
-.border--mobile {
-  @media screen and (max-width: calc($tablet - 1px)) {
-    display: none;
+.favorite__border {
+  @extend %list;
+
+  @media screen and (max-width : calc($tablet - 1px)) {
+    &:nth-child(n + 4) {
+      display: none;
+    }
   }
 }
