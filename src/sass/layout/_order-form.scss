@@ -1,8 +1,17 @@
 .decor {
-  width: 400px;
-  max-width: 500px;
+  width: 80%;
+  max-width: 350px;
   background: white;
   border-radius: 30px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 400px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 450px;
+  }
+
 }
 
 .form-left-decoration,
@@ -67,7 +76,15 @@
 }
 
 .form-inner {
-  padding: 50px;
+  padding: 10px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 50px;
+  }
 }
 
 .form-inner h3 {

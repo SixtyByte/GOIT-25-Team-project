@@ -11,6 +11,7 @@
 
 .menu {
   @extend %list;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     gap: 28px;
@@ -69,7 +70,7 @@
   z-index: 100;
   overflow-y: scroll;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     display: none;
     position: absolute;
     top: -25px;
@@ -92,7 +93,7 @@
 }
 
 .header__btn-svg {
-    fill: $dark-green;
+  fill: $dark-green;
 }
 
 .header__btn {
@@ -131,6 +132,7 @@
 
 .nav__btn {
   display: none;
+
   @media screen and (min-width: $tablet) {
     display: inline-block;
     background-color: $green;
@@ -142,5 +144,6 @@
     font-weight: 400;
     font-size: 14px;
     color: $black;
+    cursor: pointer;
   }
 }
