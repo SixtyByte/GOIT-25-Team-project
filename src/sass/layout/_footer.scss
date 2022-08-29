@@ -42,7 +42,7 @@
     background-position: bottom left 143px, bottom left 220px,
       bottom right 233px, bottom left, bottom right 94px, right top,
       right bottom -17px, right top 35px;
-  }
+  
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -55,7 +55,7 @@
       url(../images/footer/tablet/tablet-right2x.png),
       url(../images/footer/tablet/orange2x.png);
   }
-
+  }
   @media screen and (min-width: $desktop) {
     background-image: url(../images/footer/desk/desk-center-bottom.png),
       url(../images/footer/desk/orange.png),
@@ -70,7 +70,7 @@
     background-position: bottom left 340px, bottom center, bottom right 118px,
       bottom left 216px, bottom right 266px, right left 281px, bottom left 16px,
       bottom right 53px;
-  }
+  
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -83,6 +83,7 @@
       url(../images/footer/desk/desk-right2x.png),
       url(../images/footer/desk/desk-left2x.png);
   }
+}
 }
 
 .footer__inner {
