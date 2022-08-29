@@ -19,8 +19,6 @@
   }
 }
 .subscribe__title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 120%;
@@ -31,8 +29,6 @@
   }
 }
 .subscribe__text {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -54,11 +50,6 @@
     margin-right: 32px;
   }
 }
-.subscribe__input {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
-  }
-}
 .subscribe__input:invalid:not(:placeholder-shown) {
   margin-bottom: 1px;
 }
@@ -66,7 +57,7 @@
 .subscribe__input {
   padding: 12px;
 
-  border: 0.854167px solid #ffe550;
+  border: 0.85px solid $yellow;
   border-radius: 30px;
   width: 100%;
   @media screen and (min-width: $tablet) {
@@ -80,12 +71,13 @@
   }
 
   &:placeholder-shown {
-    border-color: #ffe550;
+    border-color: $yellow;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
   }
 }
 .subscribe__error {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 150%;
@@ -104,8 +96,6 @@
   padding: 11px 22px;
   position: relative;
   margin-left: auto;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 150%;
