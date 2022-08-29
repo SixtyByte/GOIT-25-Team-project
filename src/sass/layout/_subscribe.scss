@@ -21,7 +21,7 @@
 .subscribe__title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 120%;
+  line-height: calc(28 * 1.2);
   color: $black;
   margin-bottom: 20px;
   @media screen and (min-width: $tablet) {
@@ -36,18 +36,14 @@
   padding-bottom: 40px;
   @media screen and (min-width: $tablet) {
     font-size: 16px;
-    line-height: 150%;
+    line-height: calc(16 * 1.5);
     padding-bottom: 24px;
   }
 }
-
-.subscribe__form-thumb {
+.subscribe__form {
   @media screen and (min-width: $tablet) {
-    margin-right: 22px;
-    display: inline;
-  }
-  @media screen and(min-width: $desktop) {
-    margin-right: 32px;
+    display: flex;
+    align-items: flex-start;
   }
 }
 .subscribe__input:invalid:not(:placeholder-shown) {
@@ -56,7 +52,7 @@
 
 .subscribe__input {
   padding: 12px;
-
+  margin-bottom: 20px;
   border: 0.85px solid $yellow;
   border-radius: 30px;
   width: 100%;
@@ -73,18 +69,24 @@
   &:placeholder-shown {
     border-color: $yellow;
   }
-  @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+    margin-right: 22px;
+    display: inline;
+  }
+  @media screen and(min-width: $desktop) {
+    margin-right: 32px;
   }
 }
 .subscribe__error {
   font-weight: 400;
   font-size: 10px;
-  line-height: 150%;
+  line-height: calc(10 * 1.5);
 
   color: #ff705d;
   display: none;
   margin-top: 4px;
+  order: 1;
 }
 .subscribe__input:invalid:not(:placeholder-shown) + .subscribe__error {
   display: flex;
@@ -98,7 +100,7 @@
   margin-left: auto;
   font-weight: 500;
   font-size: 13px;
-  line-height: 150%;
+  line-height: calc(13 * 1.5);
   color: $black;
   background: $green;
   border-radius: 30px;
@@ -112,4 +114,5 @@
     display: inline;
     margin: 0;
   }
+  order: 2;
 }
