@@ -21,7 +21,7 @@
 .subscribe__title {
   font-weight: 700;
   font-size: 28px;
-  line-height: calc(28 * 1.2);
+  line-height: 1.5;
   color: $black;
   margin-bottom: 20px;
   @media screen and (min-width: $tablet) {
@@ -36,10 +36,20 @@
   padding-bottom: 40px;
   @media screen and (min-width: $tablet) {
     font-size: 16px;
-    line-height: calc(16 * 1.5);
+    line-height: 1.5;
     padding-bottom: 24px;
   }
 }
+
+/*.subscribe__form-thumb {
+  @media screen and (min-width: $tablet) {
+    margin-right: 22px;
+    display: inline;
+  }
+  @media screen and(min-width: $desktop) {
+    margin-right: 32px;
+  }
+}*/
 .subscribe__form {
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -81,7 +91,7 @@
 .subscribe__error {
   font-weight: 400;
   font-size: 10px;
-  line-height: calc(10 * 1.5);
+  line-height: 1.5;
 
   color: #ff705d;
   display: none;
@@ -100,7 +110,7 @@
   margin-left: auto;
   font-weight: 500;
   font-size: 13px;
-  line-height: calc(13 * 1.5);
+  line-height: 1.5;
   color: $black;
   background: $green;
   border-radius: 30px;
