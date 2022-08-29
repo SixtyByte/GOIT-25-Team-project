@@ -1,42 +1,93 @@
-.footer {
-  margin: 0 auto;
-  background-image: url(../images/footer/mobile-bg-footer.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.container{
+  padding: 0;
+}
 
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.footer {
+  margin: 0 auto;
+  background-image: url(../images/footer/mobile/mobile-bottom.png),
+    url(../images/footer/mobile/mobile-left.png),
+    url(../images/footer/mobile/mobile-right.png);
+
+  background-size: 253px, 104px, 110px;
+  background-position: bottom, left top 132px, right top;
+
+  background-repeat: no-repeat;
 
   height: auto;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/footer/mobile-bg-footer2x.png);
+    background-image: url(../images/footer/mobile/mobile-bottom2x.png),
+      url(../images/footer/mobile/mobile-left2x.png),
+      url(../images/footer/mobile/mobile-right2x.png);
   }
 
-  @media screen and (min-width: 480px) {
-    background-image: url(../images/footer/tablet-bg-footer.png);
-    padding-top: 100px;
-    padding-bottom: 100px;
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/footer/tablet/tablet-left-bottom.png),
+      url(../images/footer/tablet/tablet-center.png),
+      url(../images/footer/tablet/tablet-center-index.png),
+      url(../images/footer/tablet/tablet-left.png),
+      url(../images/footer/tablet/tablet-right-bottom.png),
+      url(../images/footer/tablet/tablet-right-center.png),
+      url(../images/footer/tablet/tablet-right.png),
+      url(../images/footer/tablet/orange.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/footer/tablet-bg-footer2x.png);
-    }
+    background-size: 168px, 153px, 221px, 184px, 171px, 203px, 170px, 96px;
+    background-position: bottom left 143px, bottom left 220px,
+      bottom right 233px, bottom left, bottom right 94px, right top,
+      right bottom -17px, right top 35px;
+  
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/footer/tablet/tablet-left-bottom2x.png),
+      url(../images/footer/tablet/tablet-center2x.png),
+      url(../images/footer/tablet/tablet-center-index2x.png),
+      url(../images/footer/tablet/tablet-left2x.png),
+      url(../images/footer/tablet/tablet-right-bottom2x.png),
+      url(../images/footer/tablet/tablet-right-center2x.png),
+      url(../images/footer/tablet/tablet-right2x.png),
+      url(../images/footer/tablet/orange2x.png);
   }
-
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/footer/desk-bg-footer.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/footer/desk-bg-footer2x.png);
-    }
   }
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/footer/desk/desk-center-bottom.png),
+      url(../images/footer/desk/orange.png),
+      url(../images/footer/desk/desk-right-bottom.png),
+      url(../images/footer/desk/desk-left-bottom.png),
+      url(../images/footer/desk/desk-banana.png),
+      url(../images/footer/desk/apple.png),
+      url(../images/footer/desk/desk-right.png),
+      url(../images/footer/desk/desk-left.png);
+
+    background-size: 526px, 380px, 182px, 178px, 235px, 163px, 181px, 195px;
+    background-position: bottom left 340px, bottom center, bottom right 118px,
+      bottom left 216px, bottom right 266px, bottom left 281px, bottom right 53px,
+      bottom left 16px;
+  
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/footer/desk/desk-center-bottom2x.png),
+      url(../images/footer/desk/orange2x.png),
+      url(../images/footer/desk/desk-right-bottom2x.png),
+      url(../images/footer/desk/desk-left-bottom2x.png),
+      url(../images/footer/desk/desk-banana2x.png),
+      url(../images/footer/desk/apple2x.png),
+      url(../images/footer/desk/desk-right2x.png),
+      url(../images/footer/desk/desk-left2x.png);
+  }
+}
 }
 
 .footer__inner {
