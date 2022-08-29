@@ -11,6 +11,7 @@
 
 .menu {
   @extend %list;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     gap: 28px;
@@ -69,7 +70,7 @@
   z-index: 100;
   overflow-y: scroll;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     display: none;
     position: absolute;
     top: -25px;
@@ -92,7 +93,8 @@
 }
 
 .header__btn-svg {
-    fill: $dark-green;
+  fill: $dark-green;
+  transition: fill $anim-fast;
 }
 
 .header__btn {
@@ -107,21 +109,8 @@
   top: 22px;
   right: 0;
 
-  & .icon-close {
-    display: none;
-    transition: fill $anim-fast;
-  }
-
-  & .icon-open {
-    transition: fill $anim-fast;
-  }
-
-  &.is-open .icon-close {
-    display: block;
-  }
-
-  &.is-open .icon-open {
-    display: none;
+  &.is-open .header__btn-svg {
+    fill: $yellow;
   }
 
   @media screen and (min-width: $tablet) {
@@ -131,6 +120,7 @@
 
 .nav__btn {
   display: none;
+
   @media screen and (min-width: $tablet) {
     display: inline-block;
     background-color: $green;
@@ -142,5 +132,6 @@
     font-weight: 400;
     font-size: 14px;
     color: $black;
+    cursor: pointer;
   }
 }

@@ -52,19 +52,13 @@
 
 .swiper-navigation {
   & .swiper-button-prev-custom {
-    @include swiper-button-tamplate;
-
-    @media screen and (min-width: $desktop) {
-      left: -10px;
-    }
+    @include swiper-button-template;
+    left: -10px;
   }
 
   & .swiper-button-next-custom {
-    @include swiper-button-tamplate;
-
-    @media screen and (min-width: $desktop) {
-      right: -10px;
-    }
+    @include swiper-button-template;
+    right: -10px;
   }
 }
 

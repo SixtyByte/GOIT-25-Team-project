@@ -1,8 +1,17 @@
 .decor {
-  width: 400px;
-  max-width: 500px;
+  width: 80%;
+  max-width: 350px;
   background: white;
   border-radius: 30px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 400px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 450px;
+  }
+
 }
 
 .form-left-decoration,
@@ -11,7 +20,7 @@
   position: absolute;
   width: 50px;
   height: 20px;
-  background: #7EB101;
+  background: $dark-green;
   border-radius: 20px;
 }
 
@@ -67,7 +76,15 @@
 }
 
 .form-inner {
-  padding: 50px;
+  padding: 10px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 50px;
+  }
 }
 
 .form-inner h3 {
@@ -84,14 +101,13 @@
   line-height: 40px;
   border-width: 0;
   border-radius: 20px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .form-inner input[type="submit"] {
   margin-top: 30px;
-  background: #BBF330;
-  border-bottom: 4px solid #7EB101;
-  color: #2C2C2C;
+  background: $green;
+  border-bottom: 4px solid $dark-green;
+  color: $black;
   font-size: 14px;
 }
 
@@ -101,8 +117,7 @@
 
 .form-inner h3 {
   margin-top: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 24px;
   color: #707981;
 }
