@@ -39,23 +39,16 @@
 }
 
 .favorites__list {
-  margin-bottom: 0;
+  display: grid;
+  justify-content: center;
+    align-items: center;
   @extend %list;
   @media screen  and (max-width: calc($tablet - 1px)) {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 0;
-    padding: 0;
+    gap: 20px;  
   }
   @media screen and (min-width: $tablet) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
     gap: 32px;
-    margin-top: 0;
-    padding: 0;
   }
   /**Destop*/
   @media screen and (min-width: $desktop) {
@@ -63,20 +56,14 @@
   }
 }
 
-.favorites__image {
+.favorite__image {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
 }
 
-.favorites__list-item {
-  @extend %list;
-
+.favorite {
   border: 14px solid $yellow;
   border-radius: 167px;
   width: 338px;
@@ -84,7 +71,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: color, ease-in-out 400ms;
+  transition: border-color $anim-fast;
 
   &:hover,
   &:focus {
@@ -92,7 +79,7 @@
     cursor: pointer;
   }
 
-  @media screen and (min-width: 0) and (max-width: calc($tablet - 1px)) {
+  @media screen  and (max-width: calc($tablet - 1px)) {
     border: 11px solid $yellow;
     border-radius: 139px;
     width: 282px;
