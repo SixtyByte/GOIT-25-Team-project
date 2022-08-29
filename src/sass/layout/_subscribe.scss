@@ -1,11 +1,23 @@
 .subscribe {
   display: block;
+  padding-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 100px;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: row-reverse;
   }
 }
-
+.subscribe__img {
+  margin: 0 auto 17px auto;
+  @media screen and (min-width: $tablet) {
+    margin: 0 0 20px auto;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
+}
 .subscribe__title {
   font-family: 'Roboto';
   font-style: normal;
@@ -32,11 +44,7 @@
     padding-bottom: 24px;
   }
 }
-/*.subscribe__form {
-  @media screen and (max-width: 767px) {
-    justify-content: flex-end;
-  }
-}*/
+
 .subscribe__form-thumb {
   @media screen and (min-width: $tablet) {
     margin-right: 22px;
@@ -115,4 +123,3 @@
     margin: 0;
   }
 }
-//пофиксить баг с бананом
