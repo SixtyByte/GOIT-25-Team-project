@@ -94,6 +94,7 @@
 
 .header__btn-svg {
   fill: $dark-green;
+  transition: fill $anim-fast;
 }
 
 .header__btn {
@@ -108,21 +109,8 @@
   top: 22px;
   right: 0;
 
-  & .icon-close {
-    display: none;
-    transition: fill $anim-fast;
-  }
-
-  & .icon-open {
-    transition: fill $anim-fast;
-  }
-
-  &.is-open .icon-close {
-    display: block;
-  }
-
-  &.is-open .icon-open {
-    display: none;
+  &.is-open .header__btn-svg {
+    fill: $yellow;
   }
 
   @media screen and (min-width: $tablet) {
