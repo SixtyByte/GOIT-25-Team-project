@@ -40,7 +40,6 @@
         font-size: 42px;
         line-height: calc(49 / 42);
     }
-
 }
 
 .customers__text {
@@ -56,7 +55,6 @@
         line-height: calc(19 / 16);
     }
 }
-
 
 .customers__review-list {
     @extend %list;
@@ -132,11 +130,38 @@
     align-items: center;
 }
 
-.custumers__pic {
+.custumers__pic-boy {
     margin-right: 16px;
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    background-image: url(../images/customers/Dude1@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/customers/Dude1@2x.jpg);
+    }
+}
+
+.custumers__pic-girl {
+    margin-right: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-image: url(../images/customers/Dude2@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/customers/Dude2@2x.jpg);
+    }
 }
 
 .customers__sign {
