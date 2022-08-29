@@ -1,4 +1,4 @@
-.container{
+.container {
   padding: 0;
 }
 
@@ -46,19 +46,19 @@
     background-position: bottom left 143px, bottom left 220px,
       bottom right 233px, bottom left, bottom right 94px, right top,
       right bottom -17px, right top 35px;
-  
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/footer/tablet/tablet-left-bottom2x.png),
-      url(../images/footer/tablet/tablet-center2x.png),
-      url(../images/footer/tablet/tablet-center-index2x.png),
-      url(../images/footer/tablet/tablet-left2x.png),
-      url(../images/footer/tablet/tablet-right-bottom2x.png),
-      url(../images/footer/tablet/tablet-right-center2x.png),
-      url(../images/footer/tablet/tablet-right2x.png),
-      url(../images/footer/tablet/orange2x.png);
-  }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/footer/tablet/tablet-left-bottom2x.png),
+        url(../images/footer/tablet/tablet-center2x.png),
+        url(../images/footer/tablet/tablet-center-index2x.png),
+        url(../images/footer/tablet/tablet-left2x.png),
+        url(../images/footer/tablet/tablet-right-bottom2x.png),
+        url(../images/footer/tablet/tablet-right-center2x.png),
+        url(../images/footer/tablet/tablet-right2x.png),
+        url(../images/footer/tablet/orange2x.png);
+    }
   }
   @media screen and (min-width: $desktop) {
     background-image: url(../images/footer/desk/desk-center-bottom.png),
@@ -72,22 +72,22 @@
 
     background-size: 526px, 380px, 182px, 178px, 235px, 163px, 181px, 195px;
     background-position: bottom left 340px, bottom center, bottom right 118px,
-      bottom left 216px, bottom right 266px, bottom left 281px, bottom right 53px,
-      bottom left 16px;
-  
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/footer/desk/desk-center-bottom2x.png),
-      url(../images/footer/desk/orange2x.png),
-      url(../images/footer/desk/desk-right-bottom2x.png),
-      url(../images/footer/desk/desk-left-bottom2x.png),
-      url(../images/footer/desk/desk-banana2x.png),
-      url(../images/footer/desk/apple2x.png),
-      url(../images/footer/desk/desk-right2x.png),
-      url(../images/footer/desk/desk-left2x.png);
+      bottom left 216px, bottom right 266px, bottom left 281px,
+      bottom right 53px, bottom left 16px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/footer/desk/desk-center-bottom2x.png),
+        url(../images/footer/desk/orange2x.png),
+        url(../images/footer/desk/desk-right-bottom2x.png),
+        url(../images/footer/desk/desk-left-bottom2x.png),
+        url(../images/footer/desk/desk-banana2x.png),
+        url(../images/footer/desk/apple2x.png),
+        url(../images/footer/desk/desk-right2x.png),
+        url(../images/footer/desk/desk-left2x.png);
+    }
   }
-}
 }
 
 .footer__inner {
@@ -96,44 +96,46 @@
     align-items: flex-start;
     justify-content: space-between;
   }
+}
 
-  &--nav {
-    display: flex;
-    gap: 80px;
-    margin-bottom: 40px;
+.footer__nav {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 40px;
 
-    @media screen and (min-width: $tablet) {
-      gap: 114px;
-    }
-
-    @media screen and (min-width: $tablet) {
-      gap: 145px;
-    }
+  @media screen and (min-width: $tablet) {
+    gap: 114px;
   }
-  &--link {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 40px;
 
-    @media screen and (min-width: $tablet) {
-      justify-content: start;
-      gap: 20px;
-      align-items: flex-end;
-      margin-bottom: 0;
-    }
-  }
-  &--doc {
-    margin-top: 60px;
-
-    @media screen and (min-width: $tablet) {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 100px;
-    }
+  @media screen and (min-width: $tablet) {
+    gap: 145px;
   }
 }
 
-.menu__link--footer {
+.footer__inner-link{
+display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: start;
+    gap: 20px;
+    align-items: flex-end;
+    margin-bottom: 0;
+  }
+}
+
+.footer__inner-doc{
+    margin-top: 60px;
+    
+      @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+      }
+}
+
+.footer__link {
   padding: 0;
 
   transition: color $anim-fast;
@@ -145,7 +147,7 @@
   }
 }
 
-.menu__item--footer {
+.footer__item {
   margin-bottom: 20px;
   &:last-child {
     margin-bottom: 0;
@@ -161,7 +163,7 @@
   flex-direction: column;
 }
 
-.form__inner--input {
+.form__inner {
   @media screen and (min-width: $tablet) {
     display: flex;
     gap: 13px;
@@ -216,6 +218,13 @@
 
   height: 42px;
 
+    transition: background-color $anim-fast;
+
+&:hover,
+&:focus{
+  background-color: $yellow;
+}
+
   @media screen and (min-width: $tablet) {
     margin: 0;
     margin-bottom: 20px;
@@ -232,10 +241,16 @@
   }
 }
 
-.footer__link {
+.footer__doc {
   font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
   text-decoration: underline;
   color: $dark-green;
+}
+
+.footer__list {
+@media screen and (min-width: 480px) {
+    padding-top: 18px;
+}
 }
