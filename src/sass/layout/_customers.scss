@@ -90,18 +90,18 @@
     padding: 8px;
     background-color: $white;
     border-radius: 0 30px 30px 30px;
-    background-repeat: no-repeat;
-    background-size: cover;
+
 
     &:nth-child(1)>.customer__info>.customer__icon {
         background-image: url(../images/customers/Dude1@1x.jpg);
-        
+
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: url(../images/customers/Dude1@2x.jpg);
         }
+
     }
 
     &:nth-child(2)>.customer__info>.customer__icon {
@@ -154,6 +154,8 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .customer__sign {
