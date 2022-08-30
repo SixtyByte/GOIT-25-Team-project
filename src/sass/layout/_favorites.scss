@@ -1,0 +1,100 @@
+.favorites__section {
+  @extend .container;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 100px;
+    padding-bottom: 140px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.favorites__header {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  margin-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49 / 42);
+  }
+}
+
+.favorites__text {
+  line-height: calc(16 / 14);
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.favorites__list {
+  display: grid;
+  justify-content: center;
+    align-items: center;
+  @extend %list;
+  @media screen  and (max-width: calc($tablet - 1px)) {
+    gap: 20px;  
+  }
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  /**Destop*/
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.favorite__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.favorite {
+  border: 14px solid $yellow;
+  border-radius: 167px;
+  width: 338px;
+  height: 338px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color $anim-fast;
+
+  &:hover,
+  &:focus {
+    border-color: $green;
+    cursor: pointer;
+  }
+
+  @media screen  and (max-width: calc($tablet - 1px)) {
+    border: 11px solid $yellow;
+    border-radius: 139px;
+    width: 282px;
+    height: 282px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    border: 16px solid $yellow;
+    width: 395px;
+    height: 397px;
+    border-radius: 197px;
+  }
+  @media screen and (max-width: calc($tablet - 1px)) {
+    &:nth-child(n + 4) {
+      display: none;
+    }
+  }
+}

@@ -3,113 +3,71 @@
 
   @media screen and (min-width: $tablet) {
     position: absolute;
-    top: 130px;
-    right: 20px;
+    top: 150px;
+    right: 40px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
-    width: 360px;
+    width: 320px;
+    height: 320px;
 
-    background-image: url('/src/images/hero/EllipseBig.png');
+    background-image: url('../images/hero/EllipseSmall.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
   }
 
   @media screen and (min-width: $desktop) {
-    top: 0;
-    right: 10px;
-    background-image: url('/src/images/hero/EllipseSmall.png');
-    padding: 25px;
-    width: 590px;
+    top: 15px;
+    right: 30px;
+    background-image: url('../images/hero/EllipseBig.png');
+    width: 580px;
+    height: 580px;
   }
 }
 
 .swiper {
-  width: 295px;
-  height: 295px;
+  width: 290px;
+  height: 290px;
   border-radius: 50%;
 
   @media screen and (min-width: $desktop) {
-    width: 535px;
-    height: 535px;
+    width: 530px;
+    height: 530px;
   }
 
   & .swiper-pagination-bullet-active {
-    background: greenyellow;
+    background: $green;
   }
 }
 
 .swiper-image {
-  width: 295px;
+  width: 290px;
 
   @media screen and (min-width: $desktop) {
-    width: 535px;
+    width: 530px;
   }
 }
 
 .swiper-navigation {
   & .swiper-button-prev-custom {
-    background-color: white;
-    width: 34px;
-    height: 28px;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-    border-color: transparent;
-    border-radius: 8px;
-
-    @media screen and (min-width: $desktop) {
-      left: -10px;
-      width: 48px;
-      height: 40px;
-    }
-
-    &::after {
-      content: '';
-      background-image: url('/src/images/hero/prev.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-      width: 10px;
-      height: 22px;
-
-      @media screen and (min-width: $desktop) {
-        width: 15px;
-        height: 30px;
-      }
-    }
+    @include swiper-button-template;
+    left: -10px;
   }
 
   & .swiper-button-next-custom {
-    background-color: white;
-    width: 34px;
-    height: 28px;
+    @include swiper-button-template;
+    right: -10px;
+  }
+}
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-    border-color: transparent;
-    border-radius: 8px;
+.swiper-button-icon {
+  width: 10px;
+  height: 22px;
 
-    @media screen and (min-width: $desktop) {
-      right: -10px;
-      width: 48px;
-      height: 40px;
-    }
-
-    &::after {
-      content: '';
-      background-image: url('/src/images/hero/next.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-      width: 10px;
-      height: 22px;
-
-      @media screen and (min-width: $desktop) {
-        width: 15px;
-        height: 30px;
-      }
-    }
+  @media screen and (min-width: $desktop) {
+    width: 15px;
+    height: 30px;
   }
 }

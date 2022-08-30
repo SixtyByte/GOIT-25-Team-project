@@ -1,3 +1,35 @@
 @mixin flex-basis($items, $gap: $card-set-gap) {
   flex-basis: calc((100% - $gap * ($items - 1)) / $items);
 }
+
+@mixin swiper-button-template {
+  background-color: white;
+  width: 34px;
+  height: 28px;
+
+  fill: black;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-color: transparent;
+  border-radius: 8px;
+
+  transition: fill $anim-fast;
+
+  @media screen and (min-width: $desktop) {
+    width: 48px;
+    height: 40px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $dark-green;
+  }
+
+  &:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+
+  &::after {
+    content: '';
+  }
+}
