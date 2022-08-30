@@ -1,21 +1,40 @@
 .subscribe {
+  position: relative;
   display: block;
   padding-bottom: 60px;
+  padding-top: 52px;
   @media screen and (min-width: $tablet) {
+    padding-top: 82px;
     padding-bottom: 100px;
   }
   @media screen and (min-width: $desktop) {
+    padding-top: 0;
     display: flex;
     flex-direction: row-reverse;
   }
 }
 .subscribe__img {
-  margin: 0 auto 17px auto;
+  position: absolute;
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    top: -52px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
   @media screen and (min-width: $tablet) {
-    margin: 0 0 20px auto;
+    margin: 0;
+    width: 281px;
+    right: 0;
+    top: -78px;
   }
   @media screen and (min-width: $desktop) {
     margin: 0;
+    top: -46px;
+    right: 0;
+    width: 608px;
+    position: relative;
   }
 }
 .subscribe__title {
