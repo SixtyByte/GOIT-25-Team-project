@@ -3,8 +3,7 @@
 
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
+
 
     background-image: url('../images/customers/Bgimage-mobile.svg');
     background-repeat: no-repeat;
@@ -78,13 +77,17 @@
     }
 }
 
-.customers__star-list {
+.star {
     @extend %list;
 
     display: flex;
     gap: 4px;
     margin-bottom: 28px;
 
+}
+
+.star__icon {
+    fill: $yellow;
 }
 
 .customers__review-item {
@@ -130,24 +133,9 @@
     align-items: center;
 }
 
-.custumers__pic-boy {
-    margin-right: 16px;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-image: url(../images/customers/Dude1@1x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(../images/customers/Dude1@2x.jpg);
-    }
-}
 
-.custumers__pic-girl {
+.custumers__pic {
     margin-right: 16px;
     width: 48px;
     height: 48px;
@@ -156,11 +144,30 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+
+
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         background-image: url(../images/customers/Dude2@2x.jpg);
+    }
+
+    &:last-child {
+        margin-right: 16px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-image: url(../images/customers/Dude1@1x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/customers/Dude1@2x.jpg);
+        }
     }
 }
 
