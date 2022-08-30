@@ -17,6 +17,8 @@
   height: auto;
   padding: 60px 16px;
 
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -109,6 +111,7 @@
 }
 
 .footer__inner-link {
+  @extend %list;
   display: flex;
   justify-content: space-around;
   margin-bottom: 40px;
@@ -157,6 +160,13 @@
 .form {
   display: flex;
   flex-direction: column;
+
+  width: 280px;
+    margin: 0 auto;
+    @media screen and (min-width: $tablet) {
+      width: auto;
+      margin: 0;
+    }
 }
 
 .form__inner {
@@ -177,6 +187,7 @@
 }
 
 .form__input {
+  position: relative;
   border: 0.854167px solid $yellow;
   border-radius: 30px;
   padding: 12px;
@@ -190,7 +201,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
 
-  display: block;
+  display: inline-block;
 
   @media screen and (min-width: $tablet) {
     margin: 0;
@@ -231,10 +242,9 @@
   font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
-
-  &--center {
-    text-align: center;
-  }
+    &--center{
+      text-align: center;
+    }
 }
 
 .footer__doc {
