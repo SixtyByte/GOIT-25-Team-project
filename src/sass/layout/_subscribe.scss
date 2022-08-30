@@ -28,14 +28,13 @@
     width: 281px;
     right: 0;
     top: -78px;
-    position: absolute;
   }
   @media screen and (min-width: $desktop) {
     margin: 0;
     top: -46px;
     right: 0;
     width: 608px;
-    position: static;
+    position: relative;
   }
 }
 .subscribe__title {
