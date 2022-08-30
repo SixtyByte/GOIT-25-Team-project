@@ -58,7 +58,7 @@
     width: 395px;
   }
   &:invalid {
-    border-color: $red-error;
+    border-color: $red;
   }
   &:valid {
     border-color: $dark-green;
@@ -80,7 +80,7 @@
   font-size: 10px;
   line-height: 1.5;
 
-  color: $red-error;
+  color: $red;
   display: none;
   margin-top: 4px;
   order: 1;
