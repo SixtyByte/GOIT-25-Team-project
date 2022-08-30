@@ -50,6 +50,7 @@
 %button_subscribe {
   @include button_template;
 
+  display: block;
   height: 42px;
   width: 130px;
 
