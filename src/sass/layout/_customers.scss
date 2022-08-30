@@ -96,6 +96,8 @@
 
     &:nth-child(1)>.customer__info>.customer__icon {
         background-image: url(../images/customers/Dude1@1x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
 
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
@@ -107,6 +109,8 @@
 
     &:nth-child(2)>.customer__info>.customer__icon {
         background-image: url(../images/customers/Dude2@1x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
 
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
@@ -155,20 +159,6 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background-image: url(../images/customers/Dude2@1x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
-
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(../images/customers/Dude2@2x.jpg);
-    }
-
-
 }
 
 .customer__sign {
