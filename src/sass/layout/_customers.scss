@@ -90,9 +90,8 @@
     max-width: 280px;
     padding: 8px;
     background-color: $white;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
+    border-radius: 0 30px 30px 30px;
+
 
     &:nth-child(1)>.customer__info>.customer__icon {
         background-image: url(../images/customers/Dude1@1x.jpg);
@@ -178,7 +177,6 @@
 
 .customer__name {
     font-weight: 600;
-    font-size: 14px;
     line-height: calc(20 / 14);
 
     color: $black;
