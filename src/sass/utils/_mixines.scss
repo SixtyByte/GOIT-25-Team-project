@@ -33,3 +33,21 @@
     content: '';
   }
 }
+
+@mixin button_template {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+
+  font: {
+    family: inherit;
+    size: 14px;
+    weight: 400;
+  }
+
+  border-radius: 30px;
+  cursor: pointer;
+
+}

@@ -11,24 +11,57 @@
 }
 
 %button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  @include button_template;
 
   height: 32px;
   width: 100px;
 
-  margin: 0;
+  border: 1px solid transparent;
+  background-color: $green;
 
-  font: {
-    family: inherit;
-    size: 14px;
-    weight: 400;
+  transition: background-color $anim-fast;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-green;
   }
 
-  border: 1px solid transparent;
-  border-radius: 30px;
-  background-color: $green;
+}
+
+%button_transparent {
+  @include button_template;
+
+  height: 40px;
+  width: 130px;
+
+  border: 2px solid $dark-green;
+  background-color: $white;
   cursor: pointer;
+
+  transition: border-color $anim-fast;
+
+  &:hover,
+  &:focus {
+    border-color: $green;
+  }
+
+}
+
+%button_subscribe {
+  @include button_template;
+
+  display: block;
+  height: 42px;
+  width: 130px;
+
+  border: 1px solid $dark-green;
+  background-color: $white;
+
+  transition: background-color $anim-fast;
+
+  &:hover,
+  &:focus {
+    background-color: $yellow;
+  }
 
 }
