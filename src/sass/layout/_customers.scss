@@ -86,13 +86,35 @@
     fill: $yellow;
 }
 
-.customers__review-item {
+.customer {
     max-width: 280px;
     padding: 8px;
     background-color: $white;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
+
+    &:nth-child(1)>.customer__info>.customer__icon {
+        background-image: url(../images/customers/Dude1@1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/customers/Dude1@2x.jpg);
+        }
+    }
+
+    &:nth-child(2)>.customer__info>.customer__icon {
+        background-image: url(../images/customers/Dude2@1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/customers/Dude2@2x.jpg);
+        }
+    }
 
 
     @media screen and (min-width: $tablet) {
@@ -108,7 +130,7 @@
     }
 }
 
-.customers__review-text {
+.customer__text {
     margin-bottom: 40px;
     font-weight: 700;
     font-size: 16px;
@@ -123,12 +145,12 @@
     }
 }
 
-.customers__info {
+.customer__info {
     display: flex;
     align-items: center;
 }
 
-.customers__icon {
+.customer__icon {
     margin-right: 16px;
     width: 48px;
     height: 48px;
@@ -146,25 +168,10 @@
         background-image: url(../images/customers/Dude2@2x.jpg);
     }
 
-    &:last-child {
-        margin-right: 16px;
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        background-image: url(../images/customers/Dude1@1x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
 
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/customers/Dude1@2x.jpg);
-        }
-    }
 }
 
-.customers__sign {
+.customer__sign {
     display: flex;
     flex-direction: column;
 
@@ -181,7 +188,7 @@
 
 }
 
-.customers__name {
+.customer__name {
     font-weight: 600;
     font-size: 14px;
     line-height: calc(20 / 14);
