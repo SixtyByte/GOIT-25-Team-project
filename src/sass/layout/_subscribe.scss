@@ -92,18 +92,15 @@
   margin-right: 4px;
 }
 .subscribe__button {
-  padding: 11px 22px;
+  @extend %button_subscribe;
+
   position: relative;
   margin-left: auto;
   font-weight: 500;
-  font-size: 13px;
-  line-height: 1.5;
   color: $black;
   background: $green;
-  border-radius: 30px;
   border: 0;
-  cursor: pointer;
-  display: block;
+
   &:hover {
     background: #b5ff00;
   }
@@ -111,5 +108,4 @@
     display: inline;
     margin: 0;
   }
-  order: 2;
 }
