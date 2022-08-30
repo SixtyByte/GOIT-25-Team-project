@@ -60,7 +60,6 @@
 
   &__button {
     @extend %button;
-    height: 30px;
 
     @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
       position: relative;
