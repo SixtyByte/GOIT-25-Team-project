@@ -1,0 +1,111 @@
+.subscribe {
+  display: block;
+  padding-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.subscribe__img {
+  margin: 0 auto 17px auto;
+  @media screen and (min-width: $tablet) {
+    margin: 0 0 20px auto;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
+}
+.subscribe__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.5;
+  color: $black;
+  margin-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    font-size: 42px;
+  }
+}
+.subscribe__text {
+  line-height: calc(16 / 14);
+  color: $black;
+  padding-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 24px;
+  }
+}
+.subscribe__form {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.subscribe__input:invalid:not(:placeholder-shown) {
+  margin-bottom: 1px;
+}
+
+.subscribe__input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid $yellow;
+  border-radius: 30px;
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: 395px;
+  }
+  &:invalid {
+    border-color: $red;
+  }
+  &:valid {
+    border-color: $dark-green;
+  }
+
+  &:placeholder-shown {
+    border-color: $yellow;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+    margin-right: 22px;
+    display: inline;
+  }
+  @media screen and(min-width: $desktop) {
+    margin-right: 32px;
+  }
+}
+.subscribe__error {
+  font-size: 10px;
+  line-height: 1.5;
+
+  color: $red;
+  display: none;
+  margin-top: 4px;
+  order: 1;
+}
+.subscribe__input:invalid:not(:placeholder-shown) + .subscribe__error {
+  display: flex;
+}
+.subscribe__error-icon {
+  margin-right: 4px;
+}
+.subscribe__button {
+  @extend %button_subscribe;
+
+  position: relative;
+  margin-left: auto;
+  font-weight: 500;
+  color: $black;
+  background: $green;
+  border: 0;
+
+  &:hover {
+    background: $button-hover-green;
+  }
+  @media screen and (min-width: $tablet) {
+    display: inline;
+    margin: 0;
+  }
+}
