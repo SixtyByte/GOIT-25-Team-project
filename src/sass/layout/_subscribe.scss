@@ -102,7 +102,7 @@
   border: 0;
 
   &:hover {
-    background: #b5ff00;
+    background: $button-hover-green;
   }
   @media screen and (min-width: $tablet) {
     display: inline;
