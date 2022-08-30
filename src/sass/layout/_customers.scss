@@ -12,15 +12,12 @@
 
     @media screen and (min-width: $tablet) {
         background-image: url('../images/customers/Bgimage-tablet.svg');
-        padding-left: 32px;
-        padding-right: 32px;
+
         padding-bottom: 120px;
     }
 
     @media screen and (min-width: $desktop) {
         padding-top: 100px;
-        padding-left: 16px;
-        padding-right: 123px;
         padding-bottom: 200px;
         background-image: url('../images/customers/Bgimage-desktop.svg');
         background-size: contain;
@@ -83,7 +80,6 @@
     display: flex;
     gap: 4px;
     margin-bottom: 28px;
-
 }
 
 .star__icon {
@@ -93,22 +89,21 @@
 .customers__review-item {
     max-width: 280px;
     padding: 8px;
-
-    background-image: url('../images/customers/Rectangle 712.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: $white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
 
 
     @media screen and (min-width: $tablet) {
         max-width: 336px;
         padding: 12px;
-        background-image: url('../images/customers/Bgview-item-second.svg');
+
     }
 
     @media screen and (min-width: $desktop) {
         max-width: 501px;
         padding: 14px;
-        background-image: url('../images/customers/Bgview-third.svg');
         margin-bottom: 0px;
     }
 }
@@ -133,9 +128,7 @@
     align-items: center;
 }
 
-
-
-.custumers__pic {
+.customers__icon {
     margin-right: 16px;
     width: 48px;
     height: 48px;
@@ -194,12 +187,4 @@
     line-height: calc(20 / 14);
 
     color: $black;
-}
-
-.customers__review-item--first {
-    @media screen and (max-width: 767px) {
-        background-image: url('../images/customers/Bgreview-item-first.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
 }
