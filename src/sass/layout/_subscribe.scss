@@ -13,9 +13,11 @@
   margin: -43px auto 17px auto;
   @media screen and (min-width: $tablet) {
     margin: 0 0 20px auto;
+    width: 281px;
   }
   @media screen and (min-width: $desktop) {
     margin: -46px 0 0 0;
+    width: 608px;
   }
 }
 .subscribe__title {
