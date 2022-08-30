@@ -31,4 +31,11 @@
   background-color: $green;
   cursor: pointer;
 
+  transition: background-color $anim-fast;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-green;
+  }
+
 }

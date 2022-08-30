@@ -119,19 +119,11 @@
 }
 
 .nav__btn {
+  @extend %button;
+  height: 32px;
   display: none;
 
   @media screen and (min-width: $tablet) {
-    display: inline-block;
-    background-color: $green;
-    border-radius: 30px;
-    padding: 5px 16px;
-
-    border: 0;
-
-    font-weight: 400;
-    font-size: 14px;
-    color: $black;
-    cursor: pointer;
+    display: inline-flex;
   }
 }
