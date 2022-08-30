@@ -39,10 +39,11 @@
 }
 
 .favorites__list {
+  @extend %list;
   display: grid;
   justify-content: center;
-    align-items: center;
-  @extend %list;
+  align-items: center;
+  
   @media screen  and (max-width: calc($tablet - 1px)) {
     gap: 20px;  
   }
