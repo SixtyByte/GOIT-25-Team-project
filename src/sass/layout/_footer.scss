@@ -189,6 +189,31 @@
   font-size: 14px;
 }
 
+.form__notif {
+  position: absolute;
+
+  display: flex;
+
+  transform: translateY(-120%);
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  color: $red;
+  opacity: 0;
+
+  transition: opacity $anim-fast;
+
+  @media screen and (min-width: $tablet) {
+      transform: translateY(300%);
+  }
+
+}
+
+.form__error {
+  margin-right: 4px;
+}
+
 .form__input {
   position: relative;
   border: 1px solid $yellow;
@@ -212,6 +237,26 @@
     margin: 0;
     margin-bottom: 12px;
   }
+
+&:invalid {
+  border-color: $red;
+}
+
+&:invalid:not(:placeholder-shown) + .form__notif{
+  opacity: 1;
+}
+
+&:focus::placeholder{
+ border-color: $dark-green;
+}
+&:valid {
+  border-color: $dark-green;
+}
+
+&:placeholder-shown {
+  border-color: $yellow;
+}
+
 }
 
 .form__btn {
