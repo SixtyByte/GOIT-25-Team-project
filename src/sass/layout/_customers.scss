@@ -165,13 +165,11 @@
     display: flex;
     flex-direction: column;
 
-    border-right: 0.854167px solid #7EB101;
+    border-right: 1px solid $dark-green;
     padding-right: 16px;
     padding-top: 6px;
     padding-bottom: 6px;
 
-    font-weight: 400;
-    font-size: 14px;
     line-height: calc(20 / 14);
 
     color: $black;
