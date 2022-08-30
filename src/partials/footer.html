@@ -36,6 +36,8 @@
             name="email"
             class="form__input"
             id="email"
+            required
+            pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
           />
           <button type="submit" class="form__btn">Subscribe</button>
         </div>
@@ -47,11 +49,11 @@
     </div>
 
     <div class="footer__inner-doc">
-      <div class="footer__inner-link">
-        <a href="" class="footer__doc">Privacy Policy</a>
-        <a href="" class="footer__doc">Terms of Service</a>
-        <a href="" class="footer__doc">Cookies Settings</a>
-      </div>
+      <ul class="footer__inner-link">
+        <li><a href="" class="footer__doc">Privacy Policy</a></li>
+        <li><a href="" class="footer__doc">Terms of Service</a></li>
+        <li><a href="" class="footer__doc">Cookies Settings</a></li>
+      </ul>
 
       <p class="footer__text footer__text--center">
         2022 FoodSta. All right reserved.
