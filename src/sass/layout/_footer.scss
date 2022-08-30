@@ -175,12 +175,12 @@
 
 .form__title {
   color: $black;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
 }
 
 .form__input {
-  border: 0.854167px solid $yellow;
+  border: 1px solid $yellow;
   border-radius: 30px;
   padding: 12px;
   width: 280px;
@@ -217,7 +217,6 @@
 }
 
 .footer__text {
-  font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
 
@@ -227,7 +226,6 @@
 }
 
 .footer__doc {
-  font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
   text-decoration: underline;
