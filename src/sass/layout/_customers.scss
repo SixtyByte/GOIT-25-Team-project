@@ -4,7 +4,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-
     background-image: url('../images/customers/Bgimage-mobile.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,13 +90,13 @@
     padding: 8px;
     background-color: $white;
     border-radius: 0 30px 30px 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 
     &:nth-child(1)>.customer__info>.customer__icon {
         background-image: url(../images/customers/Dude1@1x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-
+        
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -108,8 +107,6 @@
 
     &:nth-child(2)>.customer__info>.customer__icon {
         background-image: url(../images/customers/Dude2@1x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
 
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
