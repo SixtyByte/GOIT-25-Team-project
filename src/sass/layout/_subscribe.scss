@@ -1,24 +1,34 @@
-.subscribe {
-  position: relative;
-  display: block;
-  padding-bottom: 60px;
+.subscribe-section{
+  @extend %section;
+  
   padding-top: 52px;
+  padding-bottom: 60px;
+  
   @media screen and (min-width: $tablet) {
     padding-top: 82px;
     padding-bottom: 100px;
   }
   @media screen and (min-width: $desktop) {
     padding-top: 0;
+  }
+}
+
+.subscribe {
+  position: relative;
+  display: block;
+
+  @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: row-reverse;
   }
 }
+
 .subscribe__img {
   position: absolute;
 
   @media screen and (max-width: 767px) {
     width: 280px;
-    top: -52px;
+    top: -104px;
     right: 0;
     left: 0;
     margin: 0 auto;
@@ -27,7 +37,7 @@
     margin: 0;
     width: 281px;
     right: 0;
-    top: -78px;
+    top: -160px;
   }
   @media screen and (min-width: $desktop) {
     margin: 0;
