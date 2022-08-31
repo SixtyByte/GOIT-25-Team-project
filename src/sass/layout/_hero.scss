@@ -1,6 +1,6 @@
-.section-hero {
-  max-width: 1920px;
-  margin: 0 auto;
+.hero-section {
+  @extend %section;
+
   position: relative;
   padding: {
     top: 60px;
