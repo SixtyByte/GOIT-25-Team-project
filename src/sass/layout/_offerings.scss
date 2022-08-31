@@ -3,65 +3,58 @@
   margin-bottom: 0;
 }
 
-.offerings-container {
-  @extend .container;
+.offerings-section {
+  
+  @extend %section;
 
-  padding-bottom: 60px;
+  padding: {
+    top: 40px;
+    bottom: 60px
+  };
 
   background-image: url('../images/offering/bgimage_start_mobile.svg');
   background-repeat: no-repeat;
   background-size: cover;
 
   @media screen and (min-width: $tablet) {
-    padding-bottom: 100px;
+    padding: { 
+      top: 150px;
+      bottom: 100px}
+    
     background-image: url('../images/offering/bgimage_start_tablet.svg');
   }
 
   @media screen and (min-width: $desktop) {
-    display: flex;
-    gap: 90px;
-
-    padding-bottom: 0;
-
+    padding: { 
+      top: 177px;
+      bottom: 75px}
     background-image: url('../images/offering/bgimage_start_desktop.svg');
   }
 }
 
-.decoration {
-  padding-top: 40px;
-  margin-bottom: 60px;
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 150px;
-  }
+.offerings-container {
+  @extend .container;
 
   @media screen and (min-width: $desktop) {
-    margin : {
-      // right: 90px;
-      bottom: 0;
-    }
-
-    padding-top: 177px;
-    // padding: {
-    //   top: 177px;
-    //   bottom: 75px;
-    // }
+    display: flex;
+    gap: 90px;
   }
 }
 
-.decoration__thumb {
+
+.decoration {
   margin: {
     left: auto;
     right: auto;
     bottom: 60px;
   }
 
-  // outline: 1px solid;
+  //outline: 1px solid;
 
   width: 280px;
   height: 309px;
   background-image: url('../images/offering/img_280_309.png');
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -76,7 +69,6 @@
     width: 704px;
     height: 394px;
     background-image: url('../images/offering/img_704_394.png');
-    background-size: contain;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -87,25 +79,26 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-bottom: 0;
-    width: 505px;
+    margin: 0;
+    width: 550px;
     height: 607px;
-    background-image: url('../images/offering/img_505_607.png');
+    background-image: url('../images/offering/img_550_607.png');
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/offering/img_505_607@2x.png');
+      background-image: url('../images/offering/img_550_607@2x.png');
     }
   }
 }
 
 .offerings {
   @media screen and (min-width: $desktop) {
+    @include flex-basis(2, 32px);
     padding: {
-      top: 260px;
-      bottom: 130px;
+      top: 85px;
+      bottom: 0px;
     }
   }
 }
@@ -189,7 +182,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    @include flex-basis(2, 141px);
+    @include flex-basis(2, 102px);
   }
 
   &::before {
