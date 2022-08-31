@@ -55,8 +55,10 @@
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: url(../images/footer/desk/desk-center-bottom.png),
-      url(../images/footer/desk/orange.png),
+    background-image: 
+      url(../images/footer/desk/desk-left-center-bottom.png),
+      // url(../images/footer/desk/desk-center-bottom.png),
+      // url(../images/footer/desk/orange.png),
       url(../images/footer/desk/desk-right-bottom.png),
       url(../images/footer/desk/desk-left-bottom.png),
       url(../images/footer/desk/desk-banana.png),
@@ -65,15 +67,16 @@
       url(../images/footer/desk/desk-left.png);
 
     background-size: 526px, 380px, 182px, 178px, 235px, 163px, 181px, 195px;
-    background-position: bottom left 340px, bottom center, bottom right 118px,
+    background-position: bottom center, bottom right 118px,
       bottom left 216px, bottom right 266px, bottom left 281px,
       bottom right 53px, bottom left 16px;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(../images/footer/desk/desk-center-bottom2x.png),
-        url(../images/footer/desk/orange2x.png),
+      background-image: url(../images/footer/desk/desk-left-center-bottom2x.png),
+        // url(../images/footer/desk/desk-center-bottom2x.png),
+        // url(../images/footer/desk/orange2x.png),
         url(../images/footer/desk/desk-right-bottom2x.png),
         url(../images/footer/desk/desk-left-bottom2x.png),
         url(../images/footer/desk/desk-banana2x.png),
