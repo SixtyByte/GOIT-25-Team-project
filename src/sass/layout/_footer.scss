@@ -1,10 +1,5 @@
-.container-footer {
-  @extend .container;
-  padding: 0;
-}
-
 .footer {
-  margin: 0 auto;
+  @extend %section;
   background-image: url(../images/footer/mobile/mobile-bottom.png),
     url(../images/footer/mobile/mobile-left.png),
     url(../images/footer/mobile/mobile-right.png);
@@ -138,14 +133,27 @@
 .footer__link {
   padding: 0;
 
-  transition: color $anim-fast;
+&--line {
+    position: relative;
 
-  &:hover,
-  &:focus {
-    background-color: transparent;
-    color: $green;
-    text-decoration: underline;
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      display: block;
+      background-color: $green;
+      width: 100%;
+      height: 1px;
+      transform: scaleX(0);
+      transition: transform $anim-fast;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      transform: scaleX(1);
+    }
   }
+
 }
 
 .footer__item {
