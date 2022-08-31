@@ -1,6 +1,7 @@
-.hero-container {
-  position: relative;
+.hero-section {
+  @extend %section;
 
+  position: relative;
   padding: {
     top: 60px;
     left: 20px;
