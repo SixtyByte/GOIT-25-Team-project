@@ -1,5 +1,5 @@
 .footer {
-  margin: 0 auto;
+  @extend %section;
   background-image: url(../images/footer/mobile/mobile-bottom.png),
     url(../images/footer/mobile/mobile-left.png),
     url(../images/footer/mobile/mobile-right.png);
