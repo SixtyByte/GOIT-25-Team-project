@@ -1,5 +1,5 @@
-.customers {
-    @extend .container;
+.customers-section {
+    @extend %section;
 
     padding-top: 60px;
     padding-bottom: 60px;
@@ -21,6 +21,10 @@
         background-image: url('../images/customers/Bgimage-desktop.svg');
         background-size: contain;
     }
+}
+
+.customers {
+    @extend .container;
 }
 
 .customers__heading {
