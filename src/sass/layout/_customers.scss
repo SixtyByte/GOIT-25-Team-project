@@ -2,7 +2,7 @@
     @extend %section;
 
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 
     background-image: url('../images/customers/Bgimage-mobile.svg');
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@
 }
 
 .customer {
-    max-width: 280px;
+
     padding: 8px;
     background-color: $white;
     border-radius: 0 30px 30px 30px;
