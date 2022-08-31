@@ -1,5 +1,5 @@
-.favorites__section {
-  @extend .container;
+.favorites {
+  @extend %section;
   padding-top: 60px;
   padding-bottom: 60px;
   @media screen and (min-width: $tablet) {
