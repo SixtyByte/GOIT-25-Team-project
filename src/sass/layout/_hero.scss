@@ -1,7 +1,6 @@
 .hero-section {
   @extend %section;
 
-  position: relative;
   padding: {
     top: 60px;
     left: 20px;
@@ -27,6 +26,7 @@
 }
 
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
