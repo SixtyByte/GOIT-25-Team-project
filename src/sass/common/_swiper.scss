@@ -3,7 +3,7 @@
 
   @media screen and (min-width: $tablet) {
     position: absolute;
-    top: 150px;
+    top: 130px;
     right: 40px;
 
     display: flex;
@@ -19,7 +19,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    top: 15px;
+    top: -130px;
     right: 30px;
     background-image: url('../images/hero/EllipseBig.png');
     width: 580px;
